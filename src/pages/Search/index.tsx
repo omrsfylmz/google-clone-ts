@@ -1,5 +1,11 @@
+import Search from "../../components/Search";
+
 const index = () => {
-  return <div>Search Page</div>;
+  return (
+    <div>
+      <Search />
+    </div>
+  );
 };
 
 export default index;

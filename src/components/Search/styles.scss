@@ -1,0 +1,62 @@
+.search-bar-container {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   width: 75vw;
+  //   height: 100%;
+  //   border: 1px solid #dfe1e5;
+  //   border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: calc(632px + 6px); // buna bakacagiz
+  width: auto;
+  max-width: 584px;
+  padding: 0 14px;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+  }
+
+  & input {
+    padding: 0;
+    border: none;
+    outline: none;
+    display: flex;
+    height: 100%;
+    flex: 1;
+  }
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+}
+
+.search-bar-right-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & svg {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+.search-bar-clear-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #dfe1e5;
+  padding: 0 12px;
+}
