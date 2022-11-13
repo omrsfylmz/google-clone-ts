@@ -1,0 +1,46 @@
+.header-container {
+  display: flex;
+  padding: 6px;
+  justify-content: end;
+  gap: 30px;
+}
+
+.header-service-links {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "arial", sans-serif;
+  font-size: 13px;
+  a {
+    color: rgba(0, 0, 0, 0.87);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.header-menu-avatar {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-menu-account {
+  display: flex;
+  img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+}
