@@ -3,7 +3,7 @@ import "./styles.scss";
 
 const index = () => {
   return (
-    <div className="search-bar-container">
+    <form className="search-bar-container">
       <div className="search-icon">
         <Icon icon="search" size={20} color="#9aa0a6" />
       </div>
@@ -15,7 +15,7 @@ const index = () => {
         <Icon icon="search-by-voice" size={24} />
         <Icon icon="search-by-image" size={24} />
       </div>
-    </div>
+    </form>
   );
 };
 
