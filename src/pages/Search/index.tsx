@@ -7,7 +7,9 @@ import "./styles.scss";
 const index = () => {
   return (
     <div className="search-page-container">
-      <Header />
+      <div className="search-page-header">
+        <Header />
+      </div>
       <div className="search-page">
         <img src={googleLogo} alt="google-logo" className="google-logo" />
         <div className="search-page-inner">
