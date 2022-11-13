@@ -5,7 +5,7 @@ const index = () => {
   return (
     <div className="search-bar-container">
       <div className="search-icon">
-        <Icon icon="search" size={20} />
+        <Icon icon="search" size={20} color="#9aa0a6" />
       </div>
       <input type="text" />
       <div className="search-bar-clear-icon">
