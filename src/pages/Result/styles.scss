@@ -1,0 +1,32 @@
+.result-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.result-page-logo-container {
+  padding-right: 30px;
+}
+.result-page-logo-inner {
+  width: 150px;
+  height: 37px;
+  object-fit: contain;
+}
+
+.result-page-search-bar {
+  width: 700px;
+}
+
+.result-page-categories {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.result-page-result-cell {
+  margin-left: 230px;
+}
