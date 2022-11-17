@@ -11,19 +11,21 @@ interface SearchContextProp {
 }
 const SearchProvider: React.FC<SearchContextProp> = ({ children }) => {
   const [searchs, setSearchs] = React.useState<Search[]>([]);
-  const googleSearch = async (term: string) => {
+  const [searchValue, setSearchValue] = React.useState<string>("");
+  const googleSearch = async (term: string = searchValue) => {
     const response = await fetch(
       `https://www.googleapis.com/customsearch/v1?key=${
         import.meta.env.VITE_API_KEY
       }&cx=${import.meta.env.VITE_CONTEXT_KEY}&q=${term}`
     );
-    console.log(term);
     const data = await response.json();
     console.log(data);
     setSearchs(data.items);
   };
   return (
-    <SearchContext.Provider value={{ searchs, googleSearch }}>
+    <SearchContext.Provider
+      value={{ searchs, googleSearch, searchValue, setSearchValue }}
+    >
       {children}
     </SearchContext.Provider>
   );

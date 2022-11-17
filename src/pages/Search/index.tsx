@@ -25,7 +25,7 @@ const index = () => {
           <Search />
           <div className="search-page-button-container">
             {/* <button onClick={() => googleSearch("car")}> asdasdas</button> */}
-            <Button name="Google Search" term={term} />
+            <Button name="Google Search" />
             <Button name="I'm Feeling Lucky" />
             {/* <Button /> */}
           </div>
