@@ -17,7 +17,7 @@ const index = () => {
       <div className="search-icon">
         <Icon icon="search" size={20} color="#9aa0a6" />
       </div>
-      <input type="text" onChange={handleInput} />
+      <input type="text" onChange={handleInput} value={searchValue} />
       <div className="search-bar-clear-icon">
         <Icon icon="clear" size={20} color="#70757a" />
       </div>
