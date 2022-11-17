@@ -1,26 +1,26 @@
 import "./styles.scss";
+import { Search } from "../../types/Search";
 
-const index = () => {
+type SearchResultProps = {
+  search: Search;
+};
+
+const index = (props: SearchResultProps) => {
   return (
     <div className="search-result-container">
       <div className="search-result-container-header-features">
         <div className="display-link">
-          <a href="xxxx">https://en.wikipedia.org</a>
+          <a href={props.search.link}>{props.search.displayLink}</a>
         </div>
-        <a href="">
-          <div className="title">Car - Wikipedia</div>
+        <a href={props.search.link}>
+          <div className="title">{props.search.title}</div>
         </a>
       </div>
-      <div className="description">
-        A car or automobile is a motor vehicle with wheels. Most definitions of
-        cars say that they run primarily on roads, seat one to eight people, ...
-        A car or automobile is a motor vehicle with wheels. Most definitions of
-        cars say that they run primarily on roads, seat one to eight people, ...
-        A car or automobile is a motor vehicle with wheels. Most definitions of
-        cars say that they run primarily on roads, seat one to eight people, ...
-      </div>
+      <div className="description">{props.search.snippet}</div>
       <div className="thumbnail">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/401_Gridlock.jpg/300px-401_Gridlock.jpg" />
+        {props.search.pageMap?.cse_image?.length > 0 && (
+          <img src={props.search.pageMap?.cse_image[0].src} />
+        )}
       </div>
     </div>
   );

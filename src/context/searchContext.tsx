@@ -19,7 +19,6 @@ const SearchProvider: React.FC<SearchContextProp> = ({ children }) => {
       }&cx=${import.meta.env.VITE_CONTEXT_KEY}&q=${term}`
     );
     const data = await response.json();
-    console.log(data);
     setSearchs(data.items);
   };
   return (
