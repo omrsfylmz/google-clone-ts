@@ -1,11 +1,15 @@
 import Home from "./pages/Result";
 import Search from "./pages/Search";
-
+import SearchProvider from "./context/searchContext";
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <SearchProvider>
+      <div>
+        {/* <Home /> */}
+
+        <Search />
+      </div>
+    </SearchProvider>
   );
 }
 
